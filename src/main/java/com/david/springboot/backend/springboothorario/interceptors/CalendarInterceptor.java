@@ -37,7 +37,7 @@ public class CalendarInterceptor implements HandlerInterceptor {
 
         ObjectMapper mapper = new ObjectMapper();
         Map<String, Object> data = new HashMap<>();
-        StringBuilder message = new StringBuilder("Cerrado, fuera del horario de atención, por favor visitenos desde las "
+        StringBuilder message = new StringBuilder("Cerrado, fuera del horario de atención, por favor visítenos desde las "
                 + open + " hrs. hasta las " + close + " hrs. Gracias!");
         data.put("message", message.toString());
         data.put("date", new Date());
